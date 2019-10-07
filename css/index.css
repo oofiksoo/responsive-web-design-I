@@ -1,3 +1,370 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+@keyframes NavAnimation {
+    from {
+        background-color: blue;
+    }
+    to {
+        Background-color: green;
+    }
+}
+
+body {
+    max-width: 900px;
+    margin: 0px 50px;
+}
+
+.navbar {
+    position: fixed;
+    background-color: darkblue;
+    z-index: 998;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    color: lightgrey;
+    text-decoration: none;
+    margin: 0px 30px;
+}
+
+nav a:hover {
+    animation-name: NavAnimation;
+    animation-duration: 2s;
+}
+
+.logo {
+    display: flex;
+    margin-left: 25px;
+}
+
+.TopContent {
+    display: flex;
+    padding-top: 80px;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 48%;
+    padding: 20px 0px;
+}
+
+.content1 h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.button {
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    animation-name: NavAnimation;
+    animation-duration: 2s;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.section1 {
+    display: flex;
+}
+
+.indexbox {
+    margin: 10px;
+}
+
+.image2 {
+    margin: 10px;
+}
+
+.section2 {
+    display: flex;
+}
+
+.contact {
+    margin: 10px;
+}
+
+.contact address {
+    text-decoration: none;
+    font-style: normal;
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+    padding: 30px 0px 100px 0px;
+}
+
+hr {
+    margin: 30px 0px;
+}
+
+.sectionone h1 {
+    font-size: 28px;
+    margin: 20px 0px;
+}
+
+.sectionone img {
+    margin: 20px 0px;
+}
+
+.boxsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    width: 45%;
+    height: 25%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box a {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 180px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    background-color: white;
+}
+
+.box a:hover {
+    animation-name: NavAnimation;
+    animation-duration: 2s;
+}
+
+.sectiontwo {
+    display: flex;
+}
+
+.facts li {
+    list-style: square;
+    margin: 20px;
+}
+
+.contacttop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contacttop .box {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacttop .box img {
+    margin: 10px;
+}
+
+.contactbottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nasaimage {
+    height: 200px;
+    width: 900px;
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/habitableworlds2017_wide.jpg");
+}
+
+.nasaimage h1 {
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: palegreen;
+}
