@@ -1,3 +1,576 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
+    /* Use your own code or past solution for Great Idea Web Page CSS here! */
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* Set every element's box-sizing to border-box */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+    /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+    
+    @keyframes NavAnimation {
+        from {
+            background-color: blue;
+        }
+        to {
+            Background-color: green;
+        }
+    }
+    
+    body {
+        padding: 4%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 4%;
+    }
+    
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navbar {
+        display: flex;
+        position: fixed;
+        background-color: darkblue;
+        z-index: 998;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 2%;
+        margin: 0 2%;
+    }
+    
+    nav a {
+        color: lightgrey;
+        text-decoration: none;
+        padding: 20px;
+        margin: 0 4%;
+    }
+    
+    nav a:hover {
+        animation-name: NavAnimation;
+        animation-duration: 2s;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8%;
+    }
+    
+    .topcontent {
+        display: flex;
+        padding-top: 80px;
+    }
+    
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+        width: 48%;
+    }
+    
+    .content1 h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+    
+    .button {
+        border: 1px solid black;
+        width: 35%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button:hover {
+        animation-name: NavAnimation;
+        animation-duration: 2s;
+    }
+    
+    .button a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2%;
+    }
+    
+    .image2 img {
+        width: 100%
+    }
+    
+    .services-header-img {
+        width: 100%
+    }
+    
+    .indexbox {
+        margin: 2%;
+        width: 48%;
+    }
+    
+    .section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact {
+        padding: 0 2%;
+        margin: 0 4%;
+    }
+    
+    .contact address {
+        text-decoration: none;
+        font-style: normal;
+    }
+    
+    footer {
+        text-align: center;
+        margin: 30px;
+        padding: 30px;
+    }
+    
+    hr {
+        margin: 30px 0px;
+    }
+    
+    .sectionone {
+        margin-top: 80px;
+    }
+    
+    .sectionone h1 {
+        font-size: 28px;
+        margin: 20px 0px;
+    }
+    
+    .sectionone img {
+        margin: 20px 0px;
+    }
+    
+    .boxsection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .box {
+        width: 45%;
+        height: 25%;
+        border: 1px solid black;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .box a {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 180px;
+        height: 30px;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        background-color: white;
+    }
+    
+    .box a:hover {
+        animation-name: NavAnimation;
+        animation-duration: 2s;
+    }
+    
+    .sectiontwo {
+        display: flex;
+    }
+    
+    .facts li {
+        list-style: square;
+        margin: 20px;
+    }
+    
+    .contacttop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+        padding: 20px 0px;
+        margin-bottom: 30px;
+    }
+    
+    .contacttop .box {
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 500px;
+        margin: 2%;
+    }
+    
+    .contacttop .box img {
+        margin: 10px;
+    }
+    
+    .contactbottom {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+    
+    .nasaimage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 110px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/habitableworlds2017_wide.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .nasaimage img {
+        width: 48%;
+    }
+    
+    .contactslogan {
+        width: 48%
+    }
+    
+    .contactslogan h1 {
+        font-size: 72px;
+        color: palegreen;
+    }
+    
+    @media(max-width:800px) {
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 2%;
+        }
+        .navbar {
+            position: static;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0%;
+            padding: 0%;
+        }
+        .navbar nav a {
+            padding: 2%;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2%;
+            margin: 2%;
+        }
+        .button {
+            width: 55%;
+            height: 50%;
+            padding: 3%;
+        }
+        .topcontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 100px;
+        }
+        .image {
+            display: none;
+        }
+        .section2 {
+            width: 100%;
+        }
+        .indexbox {
+            margin: 2%;
+            padding: 2%;
+        }
+        .box {
+            width: 100%;
+            height: 25%;
+            border: 1px solid black;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            margin: 4% 0;
+        }
+        .sectiontwo {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        .nasaimage {
+            display: none;
+        }
+    }
+    
+    @media(max-width:500px) {
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column-reverse;
+            width: 100%;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        .navbar nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .topcontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 2%;
+        }
+        .image {
+            display: none;
+        }
+        .button {
+            width: 95%;
+            height: 50%;
+            padding: 3%;
+        }
+        .section1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2%;
+        }
+        .indexbox {
+            width: 100%;
+            margin: 2% 8%;
+        }
+        .section2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2%;
+        }
+        .box {
+            width: 100%;
+            height: 25%;
+            border: 1px solid black;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            margin: 4% 0;
+        }
+        .boxsection {
+            justify-content: center;
+            align-items: center;
+        }
+        .sectiontwo {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        .nasaimage {
+            display: none;
+        }
+    }
