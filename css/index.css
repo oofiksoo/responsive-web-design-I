@@ -340,6 +340,9 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding: 20px 0px;
+    margin-bottom: 30px;
 }
 
 .contacttop .box {
@@ -348,6 +351,9 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 300px;
+    height: 500px;
+    margin: 2%;
 }
 
 .contacttop .box img {
@@ -357,19 +363,29 @@ hr {
 .contactbottom {
     display: flex;
     justify-content: space-around;
+    margin-top: 2%;
 }
 
 .nasaimage {
     height: 200px;
-    width: 900px;
-    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/habitableworlds2017_wide.jpg");
-}
-
-.nasaimage h1 {
-    font-size: 72px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 110px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.nasaimage img {
+    width: 48%;
+}
+
+.contactslogan {
+    width: 48%
+}
+
+.contactslogan h1 {
+    font-size: 72px;
     color: palegreen;
 }
 
