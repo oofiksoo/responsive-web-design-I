@@ -389,7 +389,7 @@ hr {
     color: palegreen;
 }
 
-@media(max-width:940px) {
+@media(max-width:800px) {
     .navbar {
         display: flex;
         align-items: center;
@@ -437,7 +437,7 @@ hr {
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:500px) {
     .navbar {
         display: flex;
         align-items: center;
