@@ -163,10 +163,10 @@
     }
     
     body {
-        padding: 2%;
+        padding: 4%;
         display: flex;
         flex-direction: column;
-        margin: 0 2%;
+        margin: 0 4%;
     }
     
     header {
@@ -182,7 +182,7 @@
         z-index: 998;
         justify-content: center;
         align-items: center;
-        margin: 1%;
+        padding: 1%;
         width: 100%;
     }
     
@@ -224,7 +224,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 2% 0px;
+        margin: 1%;
         width: 48%;
     }
     
@@ -235,8 +235,8 @@
     
     .button {
         border: 1px solid black;
-        width: 100px;
-        height: 50px;
+        width: 35%;
+        height: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -262,13 +262,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
         padding: 0 2%;
     }
     
+    .image2 img {
+        width: 100%
+    }
+    
     .indexbox {
-        margin: 1%;
-        padding: 5%;
+        margin: 2%;
+        width: 48%;
     }
     
     .section2 {
@@ -279,7 +282,7 @@
     
     .contact {
         padding: 0 2%;
-        margin: 10px;
+        margin: 0 4%;
     }
     
     .contact address {
@@ -387,13 +390,15 @@
     }
     
     .nasaimage {
-        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 110px;
         margin-bottom: 20px;
         padding-top: 30px;
+        background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/habitableworlds2017_wide.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     
     .nasaimage img {
@@ -443,6 +448,11 @@
             padding: 2%;
             margin: 2%;
         }
+        .button {
+            width: 55%;
+            height: 50%;
+            padding: 3%;
+        }
         .topcontent {
             display: flex;
             flex-direction: column;
@@ -490,6 +500,8 @@
             justify-content: center;
             flex-direction: column-reverse;
             width: 100%;
+            margin-top: 0px;
+            padding-top: 0px;
         }
         .navbar nav {
             display: flex;
@@ -504,10 +516,15 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            margin-top: 25%;
+            margin-top: 2%;
         }
         .image {
             display: none;
+        }
+        .button {
+            width: 95%;
+            height: 50%;
+            padding: 3%;
         }
         .section1 {
             display: flex;
